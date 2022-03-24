@@ -1,0 +1,27 @@
+.JobsFilterItem {
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  
+  background: var(--tag-bg);
+  /* padding: 0.59em; */
+  padding-left: 0.59em;
+  border-radius: .5em;
+  
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: .5em;
+}
+
+.JobsFilterItem__btn {
+  display: grid;
+  place-items: center;
+  border: none;
+  background: var(--primary);
+  width: 2.37em;
+  height: 2.37em;
+  border-end-end-radius: .5em;
+  border-start-end-radius: .5em;
+}

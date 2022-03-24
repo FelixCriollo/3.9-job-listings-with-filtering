@@ -1,0 +1,5 @@
+.App {
+  width: min(87.2%, 1110px);
+  margin: auto;
+  padding: 120px 0;
+}

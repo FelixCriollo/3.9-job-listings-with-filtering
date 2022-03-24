@@ -1,0 +1,38 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+:root {
+  --bg: hsl(180, 52%, 96%);
+  --c-bg: hsl(180, 100%, 100%);
+  --tag-bg: hsl(160, 25%, 95%);
+  --primary: hsl(180, 29%, 50%);
+  --secondary: hsl(180, 8%, 52%);
+  --important: hsl(180, 14%, 20%);
+}
+
+body {
+  position: relative;
+  font-family: 'Spartan', sans-serif;
+  background: var(--bg);
+
+}
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 156px;
+  background: url("/src/images/bg-header-mobile.svg") no-repeat, var(--primary);
+  background-size: cover;
+  z-index: -1;
+}
+
+ul {
+  list-style: none;
+}

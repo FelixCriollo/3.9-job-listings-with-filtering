@@ -1,0 +1,82 @@
+.JobsItem {
+  position: relative;
+  background: var(--c-bg);
+  border-radius: 6px;
+  box-shadow: 0 6px 14px rgba(0,0,0,.25);
+  padding: 2em 1.5em 1.5em 1.5em;
+}
+
+
+.JobsItem__logo {
+  position: absolute;
+  top: -1.5em;
+  width: 3em;
+  height: 3em;
+}
+
+
+.JobsItem__company {
+  font-weight: 700;
+  font-size: 0.81rem;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+}
+.new,
+.featured {
+  font-size: 0.69rem;
+  color: var(--tag-bg);
+  border-radius: 30px;
+  padding: .75em .75em .35em .75em;
+}
+.new {
+  background: var(--primary);
+  margin: 0 .8em 0 1.5em;
+}
+.featured {
+  background: var(--important);
+}
+
+
+.JobsItem__posit {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--important);
+  letter-spacing: -0.035em;
+  margin-top: .5em;
+}
+
+.JobsItem__moreinfo {
+  display: flex;
+  gap: 1.1em;
+  margin-top: 1em;
+}
+.JobsItem__moreinfo-item {
+  position: relative;
+  font-weight: 500;
+  font-size: 0.88rem;
+  letter-spacing: -0.03em;
+  color: var(--secondary);
+}
+.JobsItem__moreinfo-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -.8em;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 10px;
+  background: var(--secondary);
+}
+
+
+.JobsItem-tags {
+  margin-top: 1.25em;
+  padding-top: 1em;
+  border-top: 1px solid var(--secondary);
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}

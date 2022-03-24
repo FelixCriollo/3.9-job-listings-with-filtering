@@ -1,0 +1,4 @@
+.JobsList {
+  display: grid;
+  gap: 3em;
+}

@@ -1,0 +1,16 @@
+.Tag {
+  color: var(--primary);
+  letter-spacing: -0.035em;
+  font-weight: 700;
+  background: var(--tag-bg);
+  padding: 0.59em;
+  padding-bottom: 0.46em;
+  border-radius: .5em;
+  cursor: pointer;
+}
+
+.Tag:hover,
+.Tag:focus {
+  color: var(--tag-bg);
+  background: var(--primary);
+}
