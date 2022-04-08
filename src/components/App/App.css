@@ -34,3 +34,9 @@
   color: var(--primary);
   background: var(--primary);
 }
+
+@media (min-width: 768px) {
+  .App {
+    padding: 74px 0;
+  }
+}

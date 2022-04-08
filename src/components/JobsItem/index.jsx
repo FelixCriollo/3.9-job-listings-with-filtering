@@ -6,7 +6,9 @@ export function JobsItem(props) {
   const tags = [props.role, props.level, ...props.languages]
 
   return (
-    <section className="JobsItem">
+    <section 
+      className={`JobsItem${props.featured ? " JobsItem--mark" : ""}`}
+    >
       <img 
         src={companyLogo} 
         alt={props.company} 
@@ -38,7 +40,7 @@ export function JobsItem(props) {
         </ul>
       </section>
 
-      <section>
+      <section className='JobsItem-tags-container'>
         <ul className='JobsItem-tags'>
           {
             tags.map(tag => (
