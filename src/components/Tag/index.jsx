@@ -1,9 +1,8 @@
-import { useContext } from 'react'
-import { JobsContext } from '../../context/JobsContext'
+import { useJobsContext } from '../../hooks/useJobsContext';
 import './Tag.css'
 
 export function Tag({ name }) {
-  const { jobFilter, setJobFilter } = useContext(JobsContext);
+  const { jobFilter, setJobFilter } = useJobsContext();
 
   const addFilterTag = (e) => {
     const currentTag = e.target.innerHTML;

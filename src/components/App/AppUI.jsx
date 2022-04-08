@@ -1,9 +1,7 @@
-import { useContext } from "react"
-import { JobsContext } from "../../context/JobsContext"
+import { useJobsContext } from '../../hooks/useJobsContext'
 
 import { JobsHeader } from '../JobsHeader'
 import { JobsFilterList } from "../JobsFilterList"
-import { JobsFilterTag } from "../JobsFilterTag"
 import { JobsItem } from "../JobsItem"
 import { JobsList } from "../JobsList"
 
@@ -12,22 +10,13 @@ import './App.css'
 function AppUI() {
   const {
     jobsFiltered,
-    jobFilter,
     setJobFilter
-  } = useContext(JobsContext)
+  } = useJobsContext()
 
   return (
     <main className="App">
       <JobsHeader>
-        <JobsFilterList>
-          {
-            jobFilter.map((filter, index) => (
-              <li key={filter+index}>
-                <JobsFilterTag children={filter}/>
-              </li>
-            ))
-          }
-        </JobsFilterList>
+        <JobsFilterList />
 
         <button 
           className="btn-clear"

@@ -16,7 +16,7 @@
   display: grid;
   place-items: center;
   
-  background: var(--primary);
+  background: url("../../images/icon-remove.svg") center center no-repeat, var(--primary);
   width: 2.37em;
   height: 2.37em;
   
@@ -27,5 +27,5 @@
 }
 
 .JobsFilterItem__btn:hover {
-  background: var(--important);
+  background: url("../../images/icon-remove.svg") center center no-repeat, var(--important);
 }

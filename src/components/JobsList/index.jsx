@@ -8,4 +8,4 @@ export function JobsList(props) {
             </ul>
         </section>
     )
-}
+} 
