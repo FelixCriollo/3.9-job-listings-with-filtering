@@ -1,7 +1,7 @@
 
 # Welcome! 👋
 
-![Desktop view](./design/)
+![Desktop view](./design/desktop.png)
 
 
 ## Live
