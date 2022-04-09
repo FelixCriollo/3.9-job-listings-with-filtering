@@ -2,16 +2,13 @@ import { useJobsContext } from '../../hooks/useJobsContext'
 
 import { JobsHeader } from '../JobsHeader'
 import { JobsFilterList } from "../JobsFilterList"
-import { JobsItem } from "../JobsItem"
 import { JobsList } from "../JobsList"
 
 import './App.css'
 
 function AppUI() {
-  const {
-    jobsFiltered,
-    setJobFilter
-  } = useJobsContext()
+  const { setJobFilter, loading } = useJobsContext()
+  console.log(loading)
 
   return (
     <main className="App">
@@ -25,15 +22,11 @@ function AppUI() {
         </button>
       </JobsHeader>
 
-      <JobsList>
-        { 
-          jobsFiltered.map(job => (
-            <li key={job.id}>
-              <JobsItem {...job} />
-            </li>
-          ))
-        }
-      </JobsList>
+      {
+        loading 
+          ? <JobsList />
+          : <h2>Cargando Trabajos...</h2>
+      }
     </main>
   );
 }

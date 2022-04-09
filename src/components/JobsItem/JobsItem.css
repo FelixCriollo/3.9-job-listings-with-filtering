@@ -85,7 +85,7 @@
   .JobsItem {
     border-radius: 6px;
     box-shadow: 0 6px 14px rgba(0,0,0,.25);
-    padding: 2.5em 2em;
+    padding: 2em 2em 2em 2.5em;
     display: flex;
     align-items: center;
     gap: 1.5em;
@@ -98,11 +98,29 @@
     height: 5.5em;
   }
 
+  .JobsItem__company {
+    font-size: .88rem;
+  }
+
+  .JobsItem__posit {
+    font-size: 1.13rem;
+    letter-spacing: 0;
+  }
+
+  .JobsItem__moreinfo {
+    gap: 2em;
+    margin-top: .75em;
+  }
+
+  .JobsItem__moreinfo-item {
+    font-size: 1rem;
+  }
+
   .JobsItem-tags {
     margin-top: 0;
     padding: 0;
     border: none;
-    flex-direction: row-reverse;
+    justify-content: end;
   }
 
   .JobsItem-tags-container {

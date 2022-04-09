@@ -2,3 +2,9 @@
   display: grid;
   gap: 3em;
 }
+
+@media (min-width: 768px) {
+  .JobsList {
+    gap: 1.5em;
+  }
+}

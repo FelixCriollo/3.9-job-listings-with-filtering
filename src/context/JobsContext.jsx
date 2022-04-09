@@ -7,11 +7,13 @@ const JobsContext = createContext();
 const JobsContextProvider = (props) => {
   const [jobs, setJobs] = useState([])
   const [jobFilter, setJobFilter] = useState([])
+  const [loading, setLoading] = useState(false)
 
   // Actualiza los datos de manera asincrona
   useEffect(() => {
     getJobs()
       .then(data => setJobs(data))
+      setLoading(true)
   }, [])
 
 
@@ -40,7 +42,9 @@ const JobsContextProvider = (props) => {
       setJobs,
 
       jobFilter,
-      setJobFilter
+      setJobFilter,
+
+      loading
     }}>
       {props.children}
     </JobsContext.Provider>
