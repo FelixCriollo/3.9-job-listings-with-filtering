@@ -1,6 +1,8 @@
 import { createContext } from "react";
 import { useState, useEffect } from "react";
-import { getJobs } from "../utils/getData";
+import { data } from "../data";
+
+console.log(data);
 
 const JobsContext = createContext();
 
@@ -11,9 +13,10 @@ const JobsContextProvider = (props) => {
 
   // Actualiza los datos de manera asincrona
   useEffect(() => {
-    getJobs()
-      .then(data => setJobs(data))
+    setTimeout(() => {
+      setJobs(data)
       setLoading(true)
+    }, 500);
   }, [])
 
 

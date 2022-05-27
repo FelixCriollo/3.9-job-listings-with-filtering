@@ -1,4 +1,4 @@
-[
+const data = [
   {
     "id": 1,
     "company": "Photosnap",
@@ -150,3 +150,5 @@
     "tools": ["React", "Sass"]
   }
 ]
+
+export { data }
